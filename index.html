@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>An Introduction to the Data Science Statistics Concentration</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="John Tipton" />
+    <script src="libs/header-attrs-2.14/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# An Introduction to the Data Science Statistics Concentration
+]
+.author[
+### John Tipton
+]
+
+---
+
+
+
+&lt;style type="text/css"&gt;
+.remark-slide-content {
+  font-size: 28px;
+  padding: 20px 80px 20px 80px;
+}
+.remark-code, .remark-inline-code {
+  background: #f0f0f0;
+}
+.remark-code {
+  font-size: 28px;
+}
+.huge .remark-code { /*Change made here*/
+  font-size: 200% !important;
+}
+.very-large .remark-code { /*Change made here*/
+  font-size: 150% !important;
+}
+.large .remark-code { /*Change made here*/
+  font-size: 125% !important;
+}
+.small .remark-code { /*Change made here*/
+  font-size: 75% !important;
+}
+
+.very-small .remark-code { /*Change made here*/
+  font-size: 50% !important;
+}
+.tiny .remark-code { /*Change made here*/
+  font-size: 40% !important;
+}
+&lt;/style&gt;
+
+
+
+
+# Data science
+
+* What is data science? 
+
+--
+
+* Data science is statistics + computer science with a focus on communication
+
+--
+
+* What is statistics?
+
+--
+
+* My opinion: data science is what statistics should have been -- the statistics community dropped the ball!
+
+---
+
+# Statistical Modeling
+
+* Drawing conclusions based on data while accounting for random variation.
+
+&lt;hr style="height:8px; visibility:hidden;" /&gt;
+
+* Goal: Make **inference** about the state of the world using **data**.
+
+&lt;hr style="height:8px; visibility:hidden;" /&gt;
+
+* Most statistics courses are taught as a recipe. 
+
+    &lt;hr style="height:8px; visibility:hidden;" /&gt;
+
+    * If your data are X then do Y.
+
+    &lt;hr style="height:8px; visibility:hidden;" /&gt;
+
+    * Where is the creativity? Science?
+
+---
+
+# What people think statistics is
+
+&lt;img src="./images/Decision-tree_1.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# What people think statistics is
+
+&lt;img src="./images/parametric-vs-non-parametric-test-hierarchy.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# What statistics actually is
+
+* The creative process of turning data into insights using mathematics
+
+&lt;hr style="height:8px; visibility:hidden;" /&gt;
+
+* The mathematics that allow for understanding using data
+
+&lt;hr style="height:8px; visibility:hidden;" /&gt;
+
+* Constructive and dynamic
+
+&lt;hr style="height:8px; visibility:hidden;" /&gt;
+
+* Collaborative: Opportunity to work with experts in multiple fields
+
+ 
+
+---
+
+# Problem with traditional statistics
+
+* Where is the science?
+
+&lt;hr style="height:8px; visibility:hidden;" /&gt;
+
+* Don't we know something about the world other than our data is X?
+
+&lt;hr style="height:8px; visibility:hidden;" /&gt;
+
+* How do we add this knowledge into our modeling?
+
+&lt;hr style="height:8px; visibility:hidden;" /&gt;
+
+
+---
+
+# Scientifically Motivated Statistical Modeling
+
+* Probabilistic modeling.
+
+&lt;hr style="height:8px; visibility:hidden;" /&gt;
+
+* Model encodes our understanding of the scientific process of interest.
+
+&lt;hr style="height:8px; visibility:hidden;" /&gt;
+
+* Model accounts for as much uncertainty as possible.
+
+&lt;hr style="height:8px; visibility:hidden;" /&gt;
+
+* Model results in a probability distribution.
+
+&lt;hr style="height:8px; visibility:hidden;" /&gt;
+
+* Update model with data. 
+
+&lt;hr style="height:8px; visibility:hidden;" /&gt;
+
+* Use the model to generate parameter estimates given data.
+
+&lt;hr style="height:8px; visibility:hidden;" /&gt;
+
+---
+
+
+# Scientifically Motivated Statistical Modeling
+
+* Criticize the model
+
+    &lt;hr style="height:6px; visibility:hidden;" /&gt;
+
+    * Does the model fit the data well?
+
+    &lt;hr style="height:6px; visibility:hidden;" /&gt;
+
+    * Do the predictions make sense?
+
+    &lt;hr style="height:6px; visibility:hidden;" /&gt;
+
+    * Are there subsets of the data that don't fit the model well?
+
+    &lt;hr style="height:6px; visibility:hidden;" /&gt;    
+
+* Make inference using the model.
+
+&lt;hr style="height:8px; visibility:hidden;" /&gt;
+
+* If the model fits the data, use the model fit for prediction or inference.
+
+---
+
+# Data Science Statistics -- What you will learn
+
+* Focus on the mathematical underpinnings for data science
+
+* Programming languages and data frameworks change
+  
+    * Today it's python/R 
+
+    * Tomorrow it's (probably) Julia 
+
+* Not everything is big data and most problems don't require deep learning and instead require careful thought
+
+---
+
+# Data science statistics - What you will learn
+
+* Understanding the first principles ensures your expertise will never become obsolete
+
+--
+
+    * The models and programming frameworks will change in the future
+    
+    * The mathematics and statistics underlying these will always be the same
+
+---
+
+# Data science statistics - What you will learn
+
+* There is a desperate need for people that can think statistically
+
+    * There are many, many more software engineers than data scientists
+
+--
+    * Why?
+--
+
+    * Statistical thinking is hard and takes time to learn
+
+---
+
+# Data science statistics
+
+* We hear from our industry partners about the importance of statistical thinking
+
+* Big interest in Bayesian statistical methods
+
+    * [Economist presidential forecast](https://projects.economist.com/us-2020-forecast/president)
+        * [GitHub code](https://github.com/TheEconomist/us-potus-model)
+
+--
+
+* Why Bayesian?
+
+    * constructive
+    
+    * quantifies uncertainty
+    
+    * easily customized for the specific problem 
+        
+---
+
+# Data science statistics 
+
+* Core courses
+
+    * Introduction to Mathematical Statistics
+    
+    * Statistical forecasting and prediction
+    
+    * Bayesian Methods
+    
+* Possible electives 
+
+    * Nonparametric methods
+
+    * Experimental Design
+    
+    * Analysis of categorical data
+
+---
+
+# Mathematical Statistics
+
+* Statistical properties
+    * What happens to the model inference/prediction as you get more data? 
+    * Are the estimates unbiased? 
+        * On average, are the estimates equal to the "true" value?
+    * Are the estimates consistent?
+        * As you get more data, do the estimates converge to the "true" value
+
+* Estimation and testing
+
+---
+
+# Mathematical Statistics
+
+* Sufficient statistics 
+
+    * The backbone of distributed computing platforms
+    
+    * Hadoop, Apache Spark, MapReduce, etc.
+    
+
+* Decision Theory
+
+    * How to make decisions under uncertainty
+    
+    * Formal definition of loss and risk
+    
+---
+
+# Statistical Forecasting and Prediction
+
+* Modeling of data that is dependent on time
+    * Temperature today is more likely to be like yesterday than the same day last year
+    * Retail sales today more likely to be like yesterday than last month
+
+* Fundamentals of "time series" data analysis
+
+* Robust understanding of autocorrelation, autoregression, and moving averages
+
+* Fundamental for finance, business forecasting, ecological monitoring, etc.
+
+---
+
+# Bayesian Methods
+
+* Understanding model building, regularization, classification and prediction.
+
+* Formal modeling of uncertainty 
+    * Estimates of how reliable a prediction is
+
+* Inclusion of prior (scientific) knowledge
+    * Add knowledge about the real world
+    
+* Constructive model building
+    * Customize the analysis to specific challenges and problems 
+    * Not just "data mining"
+    * Iterative model building and improvement
+    
+---
+
+# Other statistics courses
+
+* Nonparametric statistics
+    * What to do when assumptions are not met
+    * bootstrapping and resampling methods
+    * Foundation for deep learning and ML models
+
+* Experimental statistics
+    * A/B testing -- how internet ads are tested
+    * Scientific testing
+
+* Analysis of categorical data
+    * Generalized linear models
+    * Count data
+    * Logistic regression
+    
+
+---
+
+# Jobs in Data Science Statistics
+
+* A Data Science Statistics concentration will prepare you for all jobs in data science
+
+* Strongly recommend learning from experts 
+
+    * Much of the work of applied statisticians and data scientists is translating knowledge from experts in a domain area into mathematical models and computer code
+    
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"navigation": {
+"scroll": false
+},
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
