@@ -1,51 +1,14 @@
 ---
 title: "An Introduction to the Data Science Statistics Concentration"
 author: "John Tipton"
-output:
-  xaringan::moon_reader:
-    lib_dir: libs
-    nature:
-      navigation:
-        scroll: false      
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
+date: "08/04/2022"
+output: 
+ ioslides_presentation:
+    widescreen: true
+    css: styles.css
 urlcolor: blue
-knit: pagedown::chrome_print
+autosize: true
 ---
-
-
-```{css, echo = FALSE}
-.remark-slide-content {
-  font-size: 28px;
-  padding: 20px 80px 20px 80px;
-}
-.remark-code, .remark-inline-code {
-  background: #f0f0f0;
-}
-.remark-code {
-  font-size: 28px;
-}
-.huge .remark-code { /*Change made here*/
-  font-size: 200% !important;
-}
-.very-large .remark-code { /*Change made here*/
-  font-size: 150% !important;
-}
-.large .remark-code { /*Change made here*/
-  font-size: 125% !important;
-}
-.small .remark-code { /*Change made here*/
-  font-size: 75% !important;
-}
-
-.very-small .remark-code { /*Change made here*/
-  font-size: 50% !important;
-}
-.tiny .remark-code { /*Change made here*/
-  font-size: 40% !important;
-}
-```
 
 
 ```{r setup, include = FALSE, cache = FALSE, message = FALSE}
@@ -79,25 +42,21 @@ hl <- function(x) {
 set.seed(111)
 ```
 
-# Data science
+## Data science
 
 * What is data science? 
 
---
 
 * Data science is statistics + computer science with a focus on communication
 
---
 
 * What is statistics?
 
---
 
 * My opinion: data science is what statistics should have been -- the statistics community dropped the ball!
 
----
 
-# Statistical Modeling
+## Statistical Modeling
 
 * Drawing conclusions based on data while accounting for random variation.
 
@@ -117,25 +76,22 @@ set.seed(111)
 
     * Where is the creativity? Science?
 
----
 
-# What people think statistics is
+## What people think statistics is
 
-```{r}
+```{r, out.width="70%", fig.align="center"}
 knitr::include_graphics("./images/Decision-tree_1.jpg")
 ```
 
----
 
-# What people think statistics is
+## What people think statistics is
 
-```{r}
+```{r, out.width="80%", fig.align="center"}
 knitr::include_graphics("./images/parametric-vs-non-parametric-test-hierarchy.jpg")
 ```
 
----
 
-# What statistics actually is
+## What statistics actually is
 
 * The creative process of turning data into insights using mathematics
 
@@ -153,9 +109,8 @@ knitr::include_graphics("./images/parametric-vs-non-parametric-test-hierarchy.jp
 
  
 
----
 
-# Problem with traditional statistics
+## Problem with traditional statistics
 
 * Where is the science?
 
@@ -170,9 +125,8 @@ knitr::include_graphics("./images/parametric-vs-non-parametric-test-hierarchy.jp
 <hr style="height:8px; visibility:hidden;" />
 
 
----
 
-# Scientifically Motivated Statistical Modeling
+## Scientifically Motivated Statistical Modeling
 
 * Probabilistic modeling.
 
@@ -198,10 +152,9 @@ knitr::include_graphics("./images/parametric-vs-non-parametric-test-hierarchy.jp
 
 <hr style="height:8px; visibility:hidden;" />
 
----
 
 
-# Scientifically Motivated Statistical Modeling
+## Scientifically Motivated Statistical Modeling
 
 * Criticize the model
 
@@ -225,9 +178,8 @@ knitr::include_graphics("./images/parametric-vs-non-parametric-test-hierarchy.jp
 
 * If the model fits the data, use the model fit for prediction or inference.
 
----
 
-# Data Science Statistics -- What you will learn
+## Data Science Statistics -- What you will learn
 
 * Focus on the mathematical underpinnings for data science
 
@@ -239,56 +191,48 @@ knitr::include_graphics("./images/parametric-vs-non-parametric-test-hierarchy.jp
 
 * Not everything is big data and most problems don't require deep learning and instead require careful thought
 
----
 
-# Data science statistics - What you will learn
+## Data science statistics - What you will learn
 
 * Understanding the first principles ensures your expertise will never become obsolete
 
---
 
     * The models and programming frameworks will change in the future
     
     * The mathematics and statistics underlying these will always be the same
 
----
 
-# Data science statistics - What you will learn
+## Data science statistics - What you will learn
 
 * There is a desperate need for people that can think statistically
 
     * There are many, many more software engineers than data scientists
 
---
     * Why?
---
 
     * Statistical thinking is hard and takes time to learn
 
----
 
-# Data science statistics
+<!-- # Data science statistics -->
 
-* We hear from our industry partners about the importance of statistical thinking
+<!-- * We hear from our industry partners about the importance of statistical thinking -->
 
-* Big interest in Bayesian statistical methods
+<!-- * Big interest in Bayesian statistical methods -->
 
-    * [Economist presidential forecast](https://projects.economist.com/us-2020-forecast/president)
-        * [GitHub code](https://github.com/TheEconomist/us-potus-model)
+<!--     * [Economist presidential forecast](https://projects.economist.com/us-2020-forecast/president) -->
+<!--         * [GitHub code](https://github.com/TheEconomist/us-potus-model) -->
 
---
+<!-- -- -->
 
-* Why Bayesian?
+<!-- * Why Bayesian? -->
 
-    * constructive
-    
-    * quantifies uncertainty
-    
-    * easily customized for the specific problem 
+<!--     * constructive -->
+
+<!--     * quantifies uncertainty -->
+
+<!--     * easily customized for the specific problem  -->
         
----
-
-# Data science statistics 
+## Data science statistics 
 
 * Core courses
 
@@ -306,9 +250,9 @@ knitr::include_graphics("./images/parametric-vs-non-parametric-test-hierarchy.jp
     
     * Analysis of categorical data
 
----
 
-# Mathematical Statistics
+
+## Mathematical Statistics
 
 * Statistical properties
     * What happens to the model inference/prediction as you get more data? 
@@ -319,9 +263,8 @@ knitr::include_graphics("./images/parametric-vs-non-parametric-test-hierarchy.jp
 
 * Estimation and testing
 
----
 
-# Mathematical Statistics
+## Mathematical Statistics
 
 * Sufficient statistics 
 
@@ -336,9 +279,9 @@ knitr::include_graphics("./images/parametric-vs-non-parametric-test-hierarchy.jp
     
     * Formal definition of loss and risk
     
----
 
-# Statistical Forecasting and Prediction
+
+## Statistical Forecasting and Prediction
 
 * Modeling of data that is dependent on time
     * Temperature today is more likely to be like yesterday than the same day last year
@@ -350,9 +293,8 @@ knitr::include_graphics("./images/parametric-vs-non-parametric-test-hierarchy.jp
 
 * Fundamental for finance, business forecasting, ecological monitoring, etc.
 
----
 
-# Bayesian Methods
+## Bayesian Methods
 
 * Understanding model building, regularization, classification and prediction.
 
@@ -367,9 +309,8 @@ knitr::include_graphics("./images/parametric-vs-non-parametric-test-hierarchy.jp
     * Not just "data mining"
     * Iterative model building and improvement
     
----
 
-# Other statistics courses
+## Other statistics courses
 
 * Nonparametric statistics
     * What to do when assumptions are not met
@@ -386,9 +327,9 @@ knitr::include_graphics("./images/parametric-vs-non-parametric-test-hierarchy.jp
     * Logistic regression
     
 
----
 
-# Jobs in Data Science Statistics
+
+## Jobs in Data Science Statistics
 
 * A Data Science Statistics concentration will prepare you for all jobs in data science
 
