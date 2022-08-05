@@ -9,6 +9,8 @@ output:
 urlcolor: blue
 autosize: true
 ---
+# To get PDF slides, run the following in the console: 
+# pagedown::chrome_print("index.Rmd", "index.pdf")
 
 
 ```{r setup, include = FALSE, cache = FALSE, message = FALSE}
